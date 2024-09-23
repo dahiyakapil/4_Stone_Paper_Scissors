@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --bg-color: #8cc461;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem;
+  font-family: "Roboto", "sans-serif";
+}
+
+.header {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  border-radius: 20px;
+  height: 20vh;
+}
+
+.header .main-logo div {
+  font-size: 2.5rem;
+  font-family: 700;
+  line-height: 1;
+}
+
+.score-board {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-scores {
+  background-color: #fff;
+  color: black;
+  width: 10vw;
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 20px;
+}
+
+.main-scores div {
+  font-size: 1.15rem;
+  color: #656565;
+  font-weight: 600;
+  padding: 0.25rem 0;
+}
+.main-scores span {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.play-area {
+  width: 475px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: center;
+  background-image: url(./assets/bg-triangle\ \(1\).svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.play-area img {
+  width: 170px;
+}
+
+.scissors-image img {
+  margin-left: 20px;
+}
+
+.paper-image img {
+  margin-right: 20px;
+}
+
+footer button {
+  position: fixed;
+  gap: 10px;
+  bottom: 11rem;
+  right: 1rem;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.game-rule {
+  width: 20vw;
+  height: 300px;
+  position: absolute;
+  right: 1rem;
+  bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: lightgreen;
+  padding: 1rem;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  transition: all 1s ease;
+  margin-right: 154px;
+}
+
+ul li {
+  margin-top: 0.75rem;
+}
+
+.game-rule h2 {
+  text-align: center;
+  color: white;
+}
+
+.game-rule ul {
+  list-style-type: none;
+  text-align: left;
+  height: 45vh;
+}
+
+.game-rule ul li {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.game-rule ul li::before {
+  content: "\25A0";
+  color: #ffd600;
+  margin-right: 0px;
+}
+
+#cross-sign {
+  z-index: 2;
+  position: absolute;
+  bottom: 70%;
+  right: 0;
+  border: 2px solid white;
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  background-color: red;
+  border-radius: 50%;
+  display: none;
+  transform: all 0.35s ease;
+  margin-right: 20px;
+}
+
+.game-rule {
+  width: 250px;
+  position: absolute;
+  right: -19rem; /*change here*/
+  margin-right: 20px;
+  bottom: 14.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #004429;
+  padding: 1rem;
+  border: 4px solid #fff;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.35s ease;
+}
+
+ul li {
+  margin-top: 0.6em;
+}
+.game-rule h4 {
+  text-align: center;
+  color: white;
+  font-weight: 600px;
+  padding-bottom: 10px;
+}
+.game-rule ul {
+  list-style-type: none;
+}
+
+.game-rule ul li::before {
+  content: "\25A0";
+  color: #ffd600;
+  margin-right: 8px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  width: 60vw;
+}
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.results-content div {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.results-content .won-lost-text {
+  font-size: 2.5rem;
+}
+
+.player-choices,
+.pc-choices {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.play-again-btn {
+  outline: none;
+  border: none;
+  color: #6b6b6b;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.65rem 1rem;
+  border-radius: 5px;
+}
+
+.hurray-page {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hurray-page img {
+  height: 150px;
+}
+
+.trophy-image {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  background-image: url(./assets/images/hurray-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hurray-page h2,
+h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hurray-page h2 {
+  font-size: 6rem;
+}
+
+.hurray-page button {
+  margin-top: 2rem;
+}
+
+.hurray-page:hover {
+  transition: all 0.25s ease;
+  font-size: 1rem;
+}
+
+.play-area img:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+header,
+.results,
+main,
+footer,
+.hurray-page {
+  transition: all 0.75s ease;
+}
+
+#next-button {
+  gap: 5px;
+  margin-right: -66;
+}
+
+#rules-button {
+  margin-right: 65px;
+}

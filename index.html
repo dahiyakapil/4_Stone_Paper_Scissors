@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone, Paper, Scissors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="main-logo">
+            <div>ROCK<br>PAPER<br>SCISSORS</div>
+        </div>
+        <div class="score-board">
+            <div class="computer-score main-scores">
+                <div>Computer <br>Score</div>
+                <span class="score-numbers" id="computer-score-number">0</span>
+            </div>
+            <div class="player-score main-scores">
+                <div>Your<br> Score</div>
+                <span class="score-numbers" id="player-score-number">0</span>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="play-area">
+        <div class="rock-image" value="rock">
+            <img src="./assets/images/rock.png" alt="Rock-image">
+        </div>
+        <div class="scissors-image" value="scissors">
+            <img src="./assets/images/scissors.png" alt="Scissors-image">
+        </div>
+        <div class="paper-image" value="paper">
+            <img src="./assets/images/paper.png" alt="Paper-image">
+        </div>
+    </main>
+
+
+    <div class="results inactive">
+        <div class="player-choices">
+            <div>YOU PICKED</div>
+            <div class="winner-effect-container-box ripple-effect">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="results-content">
+            <div>
+                <div class="won-lost-text"></div>
+                <div>Against PC</div>
+            </div>
+            <button class="play-again-btn">PLAY AGAIN</button>
+        </div>
+        <div class="pc-choices">
+            <div>PC PICKED</div>
+            <div class="winner-effect-container-box"><img src="" alt=""></div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="cross-sign">X</div>
+        <div class="game-rule">
+            <h4>Game Rules</h4>
+            <ul>
+                <li>
+                    <div>Rock beats scissors, scissors beat paper, and paper beats rock.</div>
+                </li>
+                <li>
+                    <div>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper, scissors.”</div>
+                </li>
+                <li>
+                    <div>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div>
+                </li>
+                <li>
+                    <div>If both players lay down the same hand, each player lays down another hand</div>
+                </li>
+            </ul>
+        </div>
+
+        <button id="rules-button" tabindex="1">RULES</button>
+        <button id="next-button" class="inactive">NEXT</button>
+
+
+    </footer>
+
+
+    <div class="hurray-page inactive">
+        <div class="trophy-image">
+            <div>
+                <img src="./assets/images/trophy.png" alt="Trophy">
+            </div>
+        </div>
+        <h2>HURRAY!</h2>
+        <h3>YOU WON THE GAME</h3>
+        <button class="play-again-btn">PLAY AGAIN</button>
+    </div>
+
+
 </body>
+
 </html>
